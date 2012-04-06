@@ -37,8 +37,8 @@ vagrant basebox export $VEEWEE_DEFINITION
 echo "\n\nStep 3 of 5: add box to local Vagrant...\n\n"
 vagrant box add $VEEWEE_DEFINITION $VAGRANT_BOX_FILE
 
-echo -n "\n\nStep 4 of 5 (OPTIONAL): Delete downloaded *.iso image file? (Yes/no) "
-echo -n "Press ENTER for default one (Yes)\n\n"
+echo "\n\nStep 4 of 5 (OPTIONAL): Delete downloaded *.iso image file? (Yes/no) "
+echo "Press ENTER for default one (Yes)\n\n"
 read deleteiso
 if [ -z "$deleteiso" ]
 then
@@ -51,8 +51,8 @@ if [ "$deleteiso" = "Yes" ]; then
     fi
 fi
 
-echo -n "\n\nStep 5 of 5 (OPTIONAL): Delete Vagrant *.box file in working directory? (Yes/No) "
-echo -n "Press ENTER for default one (Yes)\n\n"
+echo "\n\nStep 5 of 5 (OPTIONAL): Delete Vagrant *.box file in working directory? (Yes/No) "
+echo "Press ENTER for default one (Yes)\n\n"
 read deletebox
 if [ -z "$deletebox" ]
 then
